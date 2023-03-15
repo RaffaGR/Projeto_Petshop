@@ -1,0 +1,47 @@
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	background: linear-gradient(45deg, rgba(255, 183, 0, 0.333), rgba(132, 255, 0, 0.393), rgba(255, 0, 0, 0.326));
+	border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(204, 255, 0);
+	border-radius: 15px;
+}
+
+body {
+	background: yellow;
+}
+
+tr:hover > td {
+	background: rgb(49, 49, 0);
+}
+
+td {
+	max-width: 300px;
+	max-height: 500px;
+	padding: 7px;
+	background: rgb(49,49,49);
+	color: white;
+}
+
+td > div {
+	max-width: 100%;
+	max-height: 300px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+td > div:hover {
+	max-width: 100%;
+	max-height: 300px;
+	margin: 10px;
+	overflow: auto;
+}
+
+table {
+	width: 100%;
+}

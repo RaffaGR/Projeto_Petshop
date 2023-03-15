@@ -1,0 +1,48 @@
+section {
+    width: 100%;
+    background-color: #46461d5f;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 70px;
+}
+
+.flex > div:not(#ultimo) {
+    margin: 0px 100px 100px 0px;
+}
+
+.flex > div > input{
+    margin: 0px 15px 0px 0px;
+    border-radius:5px;
+}
+
+.flex > div > input:hover{
+    background: rgb(254, 252, 204);
+}
+
+.flex button {
+    background-color: yellow;
+    color: #333;
+    transform: translate(0, -50px);
+    width: 200px;
+    height: 40px;
+}
+
+body {
+    background: url(https://www.papeiseparede.com.br/3638-330/papel-de-parede-patinhas-filhote-pequenas.jpg.webp) no-repeat;
+    background-size: 100% 150%;
+    background-attachment: fixed;
+    animation: back ease-in-out infinite 5s;
+}
+
+@keyframes back {
+    from {
+        background-size: 100% 150%;
+    }
+    50% {
+        background-size: 100% 200%;
+    }
+    to {
+        background-size: 100% 150%;
+    }
+}

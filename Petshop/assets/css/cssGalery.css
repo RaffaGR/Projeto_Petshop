@@ -1,0 +1,82 @@
+* { margin: 0; padding: 0; transition: 1s;}
+
+body {
+    background: url("https://s1.1zoom.me/big0/525/Planets_452125.jpg") no-repeat;
+   /*  background-attachment: fixed; */
+    background-size: 100%;
+
+}
+/* posicionamento */
+.slider {
+    display: block;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+    width: 500px;
+}
+
+.slider img {
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    vertical-align: top;
+}
+
+/* desaparece com o botão mas mantem ele util */
+.slider input {
+    display: none;
+}
+/* define a cor do botão */
+.slider label {
+    background-color: #ffffff;
+    bottom: -100px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+/* define a posição dos botoes */
+.slider li:nth-child(1) label {
+    left: 5%;
+}
+
+.slider li:nth-child(2) label {
+    left: 50%;
+}
+
+.slider li:nth-child(3) label {
+    left: 95%;
+}
+
+/* isso vai mudar o visual quando trocar o checked do input radius */
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+/* tentando mudar a cor do input checked */
+.slider li input:checked ~ label {
+    background: linear-gradient(70deg, rgb(215, 97, 248), rgb(97, 168, 248));
+    box-shadow: 0px 0px 50px rgb(255, 197, 80);
+}
+
+

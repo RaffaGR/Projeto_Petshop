@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="../images/logotipo.ico">
+
+    <link rel="stylesheet" href="../css/cssAgenda.css">
+    <link rel="stylesheet" href="../css/pagNavMM.css">
+</head>
+
+<body>
+    <!-- Contato Fale Conosco/SAC/Contato.  -->
+    <div class="botao-especial"></div>
+    <div class="botao-especial2"></div>
+    <!-- navegação -->
+    <nav style="z-index: 3;">
+        <a href="index.html"><img src="../images/logoBot.ico" width="50"></a>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./equipe.html">Equipes</a></li>
+            <li><a href="./loja.html">Shop</a></li>
+            <li><a href="./galeria.html">Campeões</a></li>
+            <li><a href="./doation.html">Adoção</a></li>
+            <li><a href="./agendamento.html">Agendamento</a></li>
+        </ul>
+    </nav>
+    <!-- effect -->
+    <div style="z-index: 2;" class="extra1"></div>
+
+
+    <header>
+		<h1>Agendamento</h1>
+	</header>
+
+    <!-- agendamento -->
+
+    <section>
+        <form class="flex">
+            <!-- Pessoa -->
+            <div class="text-center">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="inputEmail4">Email</label>
+                <input type="email" id="inputEmail4" placeholder="Email">
+                <label for="phone">Celular:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(00)00000-0000" required>
+            </div>
+
+            <!-- Distancia -->
+            <div class="text-center">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" id="inputAddress" placeholder="Rua dos Lobos, nº 1">
+                <label for="inputCity">Cidade</label>
+                <input type="text" id="inputCity" placeholder="Rio de janeiro">
+                <label for="inputCity">Estado</label>
+                <input type="text" id="inputState">
+                <label for="inputCEP">CEP</label>
+                <input type="text" id="inputCEP">
+            </div>
+
+            <!-- Horario -->
+            <div class="text-center">
+                <label for="metod">Serviços:</label>
+                <select id="metod" name="metod" required>
+                    <option value="">Selecione um tipo de Agendamento</option>
+                    <option value="metodo1">Método 1 - Vir buscar</option>
+                    <option value="metodo2">Método 2 - Levar para a sua casa</option>
+                    <option value="metodo3">Método 3 - Adotar um Pet</option>
+                    <option value="metodo4">Método 4 - Conhecer nosso ambiente</option>
+                </select>
+                <label for="data">Data:</label>
+                <input type="datetime-local" id="data" name="data" required>
+                <input type="submit" value="Agendar">
+            </div>
+
+            <div class="text-center">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Concordo com os termos e politica</label>
+            </div>
+            <div class="text-center" id="ultimo">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
